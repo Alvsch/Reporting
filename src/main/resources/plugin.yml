@@ -1,0 +1,41 @@
+name: Reporting
+version: '${project.version}'
+main: me.alvsch.reporting.Main
+api-version: 1.16
+authors: [ Alvsch ]
+commands:
+    report:
+        usage: /<command> <player> <reason>
+
+    viewreports:
+        usage: /<command>
+        aliases:
+            - viewreports
+            - viewreport
+            - reports
+
+        permission: reporting.viewreports
+        permission-message: §cYou can't execute this command
+
+    claimedreport:
+        usage: /<command>
+        aliases:
+            - myreport
+
+        permission: reporting.viewreports
+        permission-message: §cYou can't execute this command
+
+    moderate:
+        usage: /<command> <player>
+        aliases:
+            - mod
+            - punish
+
+        permission: reporting.moderate
+        permission-message: §cYou can't execute this command
+
+    reporttop:
+        usage: /<command>
+
+        permission: reporting.reporttop
+        permission-message: §cYou can't execute this command
